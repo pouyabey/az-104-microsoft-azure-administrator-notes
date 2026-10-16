@@ -1,38 +1,62 @@
-Kerberos, LDAP, GPO, File Server, and NAS — Quick Summary
+# 🖥️ IT Infrastructure — Quick Reference
 
-Kerberos
-- Used for authentication.
-- Verifies the user's identity.
+A concise guide to essential IT infrastructure concepts.
 
-Kerberos = "Is this user really who they claim to be?"
+---
 
-LDAP
-- Used to query and access information in Active Directory.
-- Can retrieve user details, group memberships, computer objects, and other attributes.
+### 🔐 Kerberos — Authentication
+- Authenticates users and services using tickets.
+- Commonly used in Active Directory for Single Sign-On (SSO).
 
-LDAP = "What information does Active Directory have about this user?"
+> **Kerberos = "Who are you?"**
 
-GPO
-- Stands for Group Policy Object.
-- A collection of Group Policy settings.
-- Can be applied to users and computers.
+### 📂 LDAP — Directory Access
+- Queries directory services such as Active Directory.
+- Retrieves users, groups, computers, and their attributes.
 
-GPO = A group of policies/settings applied together.
+> **LDAP = "What information does the directory have?"**
 
-File Server
-- A server that stores and shares files over the network.
-- Users can access shared folders and files from their computers.
+### ⚙️ GPO — Group Policy Object
+- A collection of settings applied to users and computers.
+- Centrally manages security policies and Windows configurations.
 
-File Server = A system that provides shared files to users over the network.
+> **GPO = "What settings should be applied?"**
 
-NAS
-- Stands for Network Attached Storage.
-- A storage device connected to the network.
-- Can also provide file-sharing services.
+### 🗄️ File Server — File Sharing
+- Stores and shares files across a network.
+- Controls access through permissions.
 
-NAS = Network storage that can also act as a File Server.
+> **File Server = "Where can users access shared files?"**
 
-Example:
-Windows Server + Shared Folders = File Server
+**Example:** Windows Server + Shared Folders
 
-Synology = NAS with File Server capabilities
+### 💾 NAS — Network Attached Storage
+- Dedicated network storage for centralized file access.
+- Often supports SMB/NFS, backups, and RAID.
+- Can function as a File Server.
+
+> **NAS = "Network storage that can also share files."**
+
+**Example:** Synology NAS
+
+---
+
+## 📊 Quick Comparison
+
+| Technology | Primary Function |
+|------------|------------------|
+| **Kerberos** | Authentication |
+| **LDAP** | Directory queries |
+| **GPO** | Centralized policy management |
+| **File Server** | Network file sharing |
+| **NAS** | Network storage and file services |
+
+---
+
+### 💡 Key Difference
+
+**File Server** = A system that provides shared files.
+
+**NAS** = A dedicated storage device that can act as a File Server.
+
+*Not every File Server is a NAS.*
